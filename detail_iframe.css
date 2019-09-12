@@ -1,0 +1,892 @@
+@charset "UTF-8";
+/* line 5, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 3, ../sass/view/_common.scss */
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* line 12, ../sass/view/_common.scss */
+.center {
+  text-align: center;
+}
+
+/* line 16, ../sass/view/_common.scss */
+body {
+  background: url('../img/bg.jpg?1449451608') repeat;
+}
+
+/* line 20, ../sass/view/_common.scss */
+a.totop {
+  display: inline-block;
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
+  position: fixed;
+  bottom: 100px;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  z-index: 400000;
+  background: url("http://static.fate-go.jp/images/totop.png") center center no-repeat;
+}
+
+@media only screen and (min-width: 1020px) {
+  /* line 4, ../sass/view/_header.scss */
+  header {
+    position: relative;
+    margin: 0 auto;
+    width: 1000px;
+    z-index: 100000;
+    min-width: 640px;
+  }
+  /* line 10, ../sass/view/_header.scss */
+  header nav {
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: url("http://static.fate-go.jp/images/pc_header_bg.png") top center repeat-x;
+    z-index: 1000000;
+  }
+  /* line 18, ../sass/view/_header.scss */
+  header nav div.menu {
+    display: none;
+  }
+  /* line 21, ../sass/view/_header.scss */
+  header nav ul {
+    width: 1000px;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  /* line 26, ../sass/view/_header.scss */
+  header nav ul li {
+    display: inline-block;
+    height: 39px;
+    margin: 3px 12px 8px 12px;
+    overflow: hidden;
+  }
+  /* line 31, ../sass/view/_header.scss */
+  header nav ul li a, header nav ul li span {
+    height: 39px;
+    display: inline-block;
+    white-space: nowrap;
+    text-indent: 100%;
+    overflow: hidden;
+  }
+  /* line 38, ../sass/view/_header.scss */
+  header nav ul li.top {
+    width: 93px;
+    height: 43px;
+    position: relative;
+    margin-top: 0px;
+  }
+  /* line 43, ../sass/view/_header.scss */
+  header nav ul li.top a {
+    width: 93px;
+    height: 43px;
+    background: url("http://static.fate-go.jp/images/pc_header_nav_logo.png") 0 0 no-repeat;
+  }
+  /* line 49, ../sass/view/_header.scss */
+  header nav ul li.news {
+    width: 90px;
+  }
+  /* line 51, ../sass/view/_header.scss */
+  header nav ul li.news a {
+    width: 90px;
+    background: url("http://static.fate-go.jp/images/pc_header_nav.png") 0 0 no-repeat;
+  }
+  /* line 54, ../sass/view/_header.scss */
+  header nav ul li.news a:hover {
+    background: url("http://static.fate-go.jp/images/pc_header_nav.png") 0 -39px no-repeat;
+  }
+  /* line 59, ../sass/view/_header.scss */
+  header nav ul li.world {
+    width: 148px;
+  }
+  /* line 61, ../sass/view/_header.scss */
+  header nav ul li.world a {
+    width: 148px;
+    background: url("http://static.fate-go.jp/images/pc_header_nav.png") -90px 0 no-repeat;
+  }
+  /* line 64, ../sass/view/_header.scss */
+  header nav ul li.world a:hover {
+    background: url("http://static.fate-go.jp/images/pc_header_nav.png") -90px -39px no-repeat;
+  }
+  /* line 69, ../sass/view/_header.scss */
+  header nav ul li.servant {
+    width: 118px;
+  }
+  /* line 71, ../sass/view/_header.scss */
+  header nav ul li.servant a {
+    width: 118px;
+    background: url("http://static.fate-go.jp/images/pc_header_nav.png") -238px 0 no-repeat;
+  }
+  /* line 74, ../sass/view/_header.scss */
+  header nav ul li.servant a:hover {
+    background: url("http://static.fate-go.jp/images/pc_header_nav.png") -238px -39px no-repeat;
+  }
+  /* line 79, ../sass/view/_header.scss */
+  header nav ul li.howtoplay {
+    width: 83px;
+  }
+  /* line 81, ../sass/view/_header.scss */
+  header nav ul li.howtoplay a {
+    width: 83px;
+    background: url("http://static.fate-go.jp/images/pc_header_nav.png") -356px 0 no-repeat;
+  }
+  /* line 84, ../sass/view/_header.scss */
+  header nav ul li.howtoplay a:hover {
+    background: url("http://static.fate-go.jp/images/pc_header_nav.png") -356px -39px no-repeat;
+  }
+  /* line 88, ../sass/view/_header.scss */
+  header nav ul li.howtoplay span {
+    width: 83px;
+    background: url("http://static.fate-go.jp/images/pc_header_nav.png") -356px 0 no-repeat;
+    opacity: 0.5;
+  }
+  /* line 94, ../sass/view/_header.scss */
+  header nav ul li.gallery {
+    width: 101px;
+  }
+  /* line 96, ../sass/view/_header.scss */
+  header nav ul li.gallery a {
+    width: 101px;
+    background: url("http://static.fate-go.jp/images/pc_header_nav.png") -439px 0 no-repeat;
+  }
+  /* line 99, ../sass/view/_header.scss */
+  header nav ul li.gallery a:hover {
+    background: url("http://static.fate-go.jp/images/pc_header_nav.png") -439px -39px no-repeat;
+  }
+  /* line 104, ../sass/view/_header.scss */
+  header nav ul li.twitter {
+    width: 101px;
+  }
+  /* line 106, ../sass/view/_header.scss */
+  header nav ul li.twitter a {
+    width: 101px;
+    background: url("http://static.fate-go.jp/images/pc_header_nav.png") -540px 0 no-repeat;
+  }
+  /* line 109, ../sass/view/_header.scss */
+  header nav ul li.twitter a:hover {
+    background: url("http://static.fate-go.jp/images/pc_header_nav.png") -540px -39px no-repeat;
+  }
+  /* line 116, ../sass/view/_header.scss */
+  header nav.none ul li.top {
+    display: none;
+  }
+
+  /* line 121, ../sass/view/_header.scss */
+  div#contents {
+    margin-top: 50px;
+  }
+}
+@media only screen and (max-width: 1019px) {
+  /* line 127, ../sass/view/_header.scss */
+  header {
+    position: relative;
+    margin: 0 auto;
+    width: 640px;
+    z-index: 100000;
+    min-width: 640px;
+  }
+  /* line 133, ../sass/view/_header.scss */
+  header nav {
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8) url("http://static.fate-go.jp/images/sp_menu_bg.png") top center repeat-x;
+    z-index: 1000000;
+    overflow: hidden;
+  }
+  /* line 142, ../sass/view/_header.scss */
+  header nav div.menu {
+    position: relative;
+    height: 90px;
+    text-align: right;
+  }
+  /* line 146, ../sass/view/_header.scss */
+  header nav div.menu a.logo {
+    white-space: nowrap;
+    text-indent: 100%;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    width: 155px;
+    height: 71px;
+    float: left;
+    background: url("http://static.fate-go.jp/images/sp_menu_logo.png") center center no-repeat;
+    margin: 4px 0 0 20px;
+  }
+  /* line 158, ../sass/view/_header.scss */
+  header nav div.menu img#menuButton {
+    cursor: pointer;
+    margin: 27px 23px 35px 20px;
+  }
+  /* line 163, ../sass/view/_header.scss */
+  header nav.news div.menu {
+    background: url("http://static.fate-go.jp/images/sp_menu_ptitle_news_t.png") center center no-repeat;
+  }
+  /* line 166, ../sass/view/_header.scss */
+  header nav.world div.menu {
+    background: url("http://static.fate-go.jp/images/sp_menu_ptitle_world_t.png") center center no-repeat;
+  }
+  /* line 169, ../sass/view/_header.scss */
+  header nav.servant div.menu {
+    background: url("http://static.fate-go.jp/images/sp_menu_ptitle_servant_t.png") center center no-repeat;
+  }
+  /* line 172, ../sass/view/_header.scss */
+  header nav.howtoplay div.menu {
+    background: url("http://static.fate-go.jp/images/sp_menu_ptitle_howtoplay_t.png") center center no-repeat;
+  }
+  /* line 175, ../sass/view/_header.scss */
+  header nav.gallery div.menu {
+    background: url("http://static.fate-go.jp/images/sp_menu_ptitle_gallery_t.png") center center no-repeat;
+  }
+  /* line 178, ../sass/view/_header.scss */
+  header nav.pre_entry_sp div.menu {
+    background: url("http://static.fate-go.jp/images/sp_menu_ptitle_pre_entry_t.png") center center no-repeat;
+  }
+  /* line 181, ../sass/view/_header.scss */
+  header nav ul {
+    width: 640px;
+    height: 267.3px;
+    margin: 0 auto;
+    overflow: hidden;
+    *zoom: 1;
+  }
+  /* line 187, ../sass/view/_header.scss */
+  header nav ul li {
+    display: inline-block;
+    height: 81px;
+    width: 274px;
+    overflow: hidden;
+  }
+  /* line 192, ../sass/view/_header.scss */
+  header nav ul li a, header nav ul li span {
+    height: 51px;
+    display: inline-block;
+    white-space: nowrap;
+    text-indent: 100%;
+    overflow: hidden;
+  }
+  /* line 199, ../sass/view/_header.scss */
+  header nav ul li.left {
+    float: left;
+    margin-left: 30px;
+    width: 240px;
+  }
+  /* line 204, ../sass/view/_header.scss */
+  header nav ul li.right {
+    float: right;
+    margin-right: 70px;
+  }
+  /* line 208, ../sass/view/_header.scss */
+  header nav ul li.top {
+    display: none;
+  }
+  /* line 211, ../sass/view/_header.scss */
+  header nav ul li.news {
+    margin-top: 20px;
+  }
+  /* line 213, ../sass/view/_header.scss */
+  header nav ul li.news a {
+    width: 148px;
+    background: url('../img/sp_menu_2.png?1449451608') 0 0 no-repeat;
+  }
+  /* line 218, ../sass/view/_header.scss */
+  header nav ul li.world {
+    margin-top: 20px;
+  }
+  /* line 220, ../sass/view/_header.scss */
+  header nav ul li.world a {
+    width: 270px;
+    background: url('../img/sp_menu_2.png?1449451608') -148px 0 no-repeat;
+  }
+  /* line 225, ../sass/view/_header.scss */
+  header nav ul li.servant {
+    margin-top: 2px;
+  }
+  /* line 227, ../sass/view/_header.scss */
+  header nav ul li.servant a {
+    width: 208px;
+    background: url('../img/sp_menu_2.png?1449451608') -418px 0 no-repeat;
+  }
+  /* line 232, ../sass/view/_header.scss */
+  header nav ul li.howtoplay {
+    margin-top: 2px;
+  }
+  /* line 234, ../sass/view/_header.scss */
+  header nav ul li.howtoplay a, header nav ul li.howtoplay span {
+    width: 269px;
+    background: url('../img/sp_menu_2.png?1449451608') -626px 0 no-repeat;
+  }
+  /* line 239, ../sass/view/_header.scss */
+  header nav ul li.gallery {
+    margin-top: 2px;
+  }
+  /* line 241, ../sass/view/_header.scss */
+  header nav ul li.gallery a {
+    width: 180px;
+    background: url('../img/sp_menu_2.png?1449451608') -895px 0 no-repeat;
+  }
+  /* line 246, ../sass/view/_header.scss */
+  header nav ul li.twitter {
+    margin-top: 2px;
+  }
+  /* line 248, ../sass/view/_header.scss */
+  header nav ul li.twitter a {
+    width: 176px;
+    background: url('../img/sp_menu_2.png?1449451608') -1075px 0 no-repeat;
+  }
+}
+/* line 3, ../sass/view/_blog-nav-bar.scss */
+.nav-ber {
+  width: 594px;
+  margin: auto;
+}
+/* line 7, ../sass/view/_blog-nav-bar.scss */
+.nav-ber li {
+  float: left;
+  height: 61px;
+  position: relative;
+}
+/* line 13, ../sass/view/_blog-nav-bar.scss */
+.nav-ber li .new:before {
+  content: url('../img/new.png?1453770433');
+  top: -6px;
+  left: 10px;
+  position: absolute;
+}
+/* line 21, ../sass/view/_blog-nav-bar.scss */
+.nav-ber li a {
+  display: inline-block;
+  height: 61px;
+}
+/* line 26, ../sass/view/_blog-nav-bar.scss */
+.nav-ber li .notice {
+  background: url('../img/nav_notice.png?1449451608') no-repeat 0 bottom;
+  width: 152px;
+}
+/* line 30, ../sass/view/_blog-nav-bar.scss */
+.nav-ber li .notice:hover {
+  background-position: 0 top;
+}
+/* line 34, ../sass/view/_blog-nav-bar.scss */
+.nav-ber li .notice.current {
+  background-position: 0 top;
+}
+/* line 39, ../sass/view/_blog-nav-bar.scss */
+.nav-ber li .maint {
+  background: url('../img/nav_maint.png?1449451608') no-repeat 0 bottom;
+  width: 145px;
+}
+/* line 43, ../sass/view/_blog-nav-bar.scss */
+.nav-ber li .maint:hover {
+  background-position: 0 top;
+}
+/* line 47, ../sass/view/_blog-nav-bar.scss */
+.nav-ber li .maint.current {
+  background-position: 0 top;
+}
+/* line 52, ../sass/view/_blog-nav-bar.scss */
+.nav-ber li .update {
+  background: url('../img/nav_update.png?1449451608') no-repeat 0 bottom;
+  width: 146px;
+}
+/* line 56, ../sass/view/_blog-nav-bar.scss */
+.nav-ber li .update:hover {
+  background-position: 0 top;
+}
+/* line 60, ../sass/view/_blog-nav-bar.scss */
+.nav-ber li .update.current {
+  background-position: 0 top;
+}
+/* line 65, ../sass/view/_blog-nav-bar.scss */
+.nav-ber li .failure {
+  background: url('../img/nav_failure.png?1449451608') no-repeat 0 bottom;
+  width: 151px;
+}
+/* line 69, ../sass/view/_blog-nav-bar.scss */
+.nav-ber li .failure:hover {
+  background-position: 0 top;
+}
+/* line 73, ../sass/view/_blog-nav-bar.scss */
+.nav-ber li .failure.current {
+  background-position: 0 top;
+}
+
+/* line 1, ../sass/view/detail/_detail.scss */
+main {
+  display: block;
+}
+@media screen and (min-width: 1020px) {
+  /* line 1, ../sass/view/detail/_detail.scss */
+  main {
+    padding-top: 72px;
+  }
+}
+/* line 9, ../sass/view/detail/_detail.scss */
+main .wrapper {
+  width: 640px;
+  margin: auto;
+}
+/* line 14, ../sass/view/detail/_detail.scss */
+main .article {
+  width: 520px;
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+  background: url('../img/detail_bg.png?1450055546');
+}
+/* line 21, ../sass/view/detail/_detail.scss */
+main .article .title-box {
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: left;
+}
+/* line 26, ../sass/view/detail/_detail.scss */
+main .article .title-box .date {
+  color: #114571;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+/* line 32, ../sass/view/detail/_detail.scss */
+main .article .title-box .title {
+  font-size: 24px;
+  line-height: 1.3;
+  word-break: keep-all;
+}
+/* line 39, ../sass/view/detail/_detail.scss */
+main .article img {
+  margin: 0;
+  max-width: 100%;
+  height: auto;
+}
+/* line 45, ../sass/view/detail/_detail.scss */
+main .article p {
+  text-align: left;
+  font-size: 18px;
+  margin: 0 0 1.5em 0;
+  line-height: 1.6;
+}
+/* line 54, ../sass/view/detail/_detail.scss */
+main .article .sample-ss img {
+  float: left;
+  max-width: 100%;
+  height: auto;
+}
+/* line 59, ../sass/view/detail/_detail.scss */
+main .article .sample-ss img:nth-child(odd) {
+  margin-right: 14px;
+}
+
+/* line 3, ../sass/view/_footer.scss */
+footer {
+  position: relative;
+  z-index: 15000;
+  background: #000 url("http://static.fate-go.jp/images/sp_footer_bg_line.png") top left repeat-x;
+  padding-top: 9px;
+}
+/* line 8, ../sass/view/_footer.scss */
+footer div.wrapper {
+  background: url("http://static.fate-go.jp/images/sp_footer_bg.gif");
+  margin: 0 auto;
+  width: 640px;
+  padding: 20px 0 0 0;
+}
+/* line 16, ../sass/view/_footer.scss */
+footer div.wrapper div.colored div#footer-social {
+  width: 425px;
+  overflow: hidden;
+  margin: 0 -1px 0 19px;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 22, ../sass/view/_footer.scss */
+footer div.wrapper div.colored div#footer-social p.share {
+  width: 323px;
+  height: 71px;
+  background: url("http://static.fate-go.jp/images/sp_sns_sharebox.png") top left no-repeat;
+  overflow: hidden;
+  vertical-align: middle;
+  display: inline-block;
+  float: left;
+  display: none;
+}
+/* line 31, ../sass/view/_footer.scss */
+footer div.wrapper div.colored div#footer-social p.share span.num {
+  display: inline-block;
+  height: 40px;
+  width: 170px;
+  margin: 14px 0 0 95px;
+  padding: 5px 0px 0px 0;
+  font-size: 28px;
+  letter-spacing: 0.1em;
+  text-align: right;
+  font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+}
+/* line 43, ../sass/view/_footer.scss */
+footer div.wrapper div.colored div#footer-social div.share-total {
+  display: inline-block;
+  height: 0px;
+  width: 311px;
+  position: relative;
+  top: -2px;
+  font-size: 26px;
+  letter-spacing: 0.1em;
+  text-align: right;
+  text-decoration: none;
+  font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+  background: #FFF url("http://static.fate-go.jp/images/sp_sns_sharebox_bottom.png") left center no-repeat;
+  overflow: hidden;
+}
+/* line 56, ../sass/view/_footer.scss */
+footer div.wrapper div.colored div#footer-social div.share-total p {
+  display: inline-block;
+  width: 223px;
+  height: 32px;
+  margin-top: 10px;
+  padding: 0 45px 0 0;
+}
+/* line 62, ../sass/view/_footer.scss */
+footer div.wrapper div.colored div#footer-social div.share-total p.share-tw a {
+  text-decoration: none;
+  color: #313131;
+}
+/* line 68, ../sass/view/_footer.scss */
+footer div.wrapper div.colored div#footer-social ul {
+  width: 268px;
+  text-align: right;
+  float: right;
+}
+/* line 72, ../sass/view/_footer.scss */
+footer div.wrapper div.colored div#footer-social ul li {
+  width: 71px;
+  height: 71px;
+  display: inline-block;
+  margin-left: 12px;
+}
+/* line 77, ../sass/view/_footer.scss */
+footer div.wrapper div.colored div#footer-social ul li a {
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
+  width: 71px;
+  height: 71px;
+  display: inline-block;
+  margin: 0;
+}
+/* line 86, ../sass/view/_footer.scss */
+footer div.wrapper div.colored div#footer-social ul li.tw a {
+  background: url("http://static.fate-go.jp/images/sp_sns_twitter.png");
+}
+/* line 89, ../sass/view/_footer.scss */
+footer div.wrapper div.colored div#footer-social ul li.fb a {
+  background: url("http://static.fate-go.jp/images/sp_sns_facebook.png");
+}
+/* line 92, ../sass/view/_footer.scss */
+footer div.wrapper div.colored div#footer-social ul li.line a {
+  background: url("http://static.fate-go.jp/images/sp_sns_line.png");
+}
+/* line 98, ../sass/view/_footer.scss */
+footer div.wrapper div.colored div.pre_entry {
+  width: 599px;
+  height: 248px;
+  position: relative;
+  background: url("http://static.fate-go.jp/images/sp_pre_entry.png?v=2");
+  margin: 46px 0 0 22px;
+}
+/* line 104, ../sass/view/_footer.scss */
+footer div.wrapper div.colored div.pre_entry h2 {
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+}
+/* line 111, ../sass/view/_footer.scss */
+footer div.wrapper div.colored div.pre_entry a.subscribe {
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  width: 386px;
+  height: 66px;
+  background: url("http://static.fate-go.jp/images/sp_pre_entry_button.png");
+  margin: 169px 0 0 19px;
+}
+/* line 123, ../sass/view/_footer.scss */
+footer div.wrapper div.colored div.spec {
+  position: relative;
+  margin: 0 0 45px 0;
+}
+/* line 126, ../sass/view/_footer.scss */
+footer div.wrapper div.colored div.spec h2 {
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
+  width: 392px;
+  height: 306px;
+  background: url("http://static.fate-go.jp/images/sp_footer_spec.png?v=4");
+  margin: 28px -1px 0 125px;
+}
+/* line 135, ../sass/view/_footer.scss */
+footer div.wrapper div.colored div.spec ul {
+  width: 640px;
+  text-align: center;
+  margin: 21px -1px 21px 0;
+}
+/* line 139, ../sass/view/_footer.scss */
+footer div.wrapper div.colored div.spec ul li {
+  width: 210px;
+  height: 62px;
+  display: inline-block;
+}
+/* line 143, ../sass/view/_footer.scss */
+footer div.wrapper div.colored div.spec ul li a, footer div.wrapper div.colored div.spec ul li span {
+  width: 210px;
+  height: 62px;
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
+  display: inline-block;
+}
+/* line 151, ../sass/view/_footer.scss */
+footer div.wrapper div.colored div.spec ul li.ios {
+  margin: 0 10px 0 0;
+}
+/* line 154, ../sass/view/_footer.scss */
+footer div.wrapper div.colored div.spec ul li.android a {
+  background: url("http://static.fate-go.jp/images/sp_download_badge_android.png");
+}
+/* line 158, ../sass/view/_footer.scss */
+footer div.wrapper div.colored div.spec ul li.ios a {
+  background: url("http://static.fate-go.jp/images/sp_download_badge_ios.png");
+}
+/* line 161, ../sass/view/_footer.scss */
+footer div.wrapper div.colored div.spec ul li.ios span {
+  background: url("http://static.fate-go.jp/images/sp_download_badge_ios_cs.png");
+}
+/* line 168, ../sass/view/_footer.scss */
+footer div.wrapper div.colored div.env {
+  color: #FFF;
+  font-size: 18px;
+  line-height: 1.5em;
+  margin: 2em auto;
+  width: 510px;
+}
+/* line 174, ../sass/view/_footer.scss */
+footer div.wrapper div.colored div.env h4 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 1em;
+  font-size: 18px;
+}
+/* line 180, ../sass/view/_footer.scss */
+footer div.wrapper div.colored div.env p {
+  font-size: 18px;
+}
+/* line 182, ../sass/view/_footer.scss */
+footer div.wrapper div.colored div.env p.sub {
+  font-size: 14px;
+  margin-bottom: 1em;
+}
+/* line 189, ../sass/view/_footer.scss */
+footer div.wrapper div.colored nav {
+  width: 640px;
+  margin: 0 auto;
+  background: url("http://static.fate-go.jp/images/sp_footer_bg_line.png") bottom left repeat-x;
+  padding-bottom: 10px;
+}
+/* line 194, ../sass/view/_footer.scss */
+footer div.wrapper div.colored nav ul.nav {
+  position: relative;
+  width: 640px;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 199, ../sass/view/_footer.scss */
+footer div.wrapper div.colored nav ul.nav li {
+  display: inline-box;
+  width: 640px;
+  height: 77px;
+  position: relative;
+  border-top: 2px solid #BAA57D;
+}
+/* line 205, ../sass/view/_footer.scss */
+footer div.wrapper div.colored nav ul.nav li a, footer div.wrapper div.colored nav ul.nav li span {
+  display: inline-block;
+  height: 77px;
+  width: 640px;
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
+}
+/* line 213, ../sass/view/_footer.scss */
+footer div.wrapper div.colored nav ul.nav li.news a {
+  background: url("http://static.fate-go.jp/images/sp_footer_nav_01.png") center top no-repeat;
+}
+/* line 216, ../sass/view/_footer.scss */
+footer div.wrapper div.colored nav ul.nav li.world a {
+  background: url("http://static.fate-go.jp/images/sp_footer_nav_02.png") center top no-repeat;
+}
+/* line 219, ../sass/view/_footer.scss */
+footer div.wrapper div.colored nav ul.nav li.servant a {
+  background: url("http://static.fate-go.jp/images/sp_footer_nav_03.png") center top no-repeat;
+}
+/* line 223, ../sass/view/_footer.scss */
+footer div.wrapper div.colored nav ul.nav li.howtoplay a, footer div.wrapper div.colored nav ul.nav li.howtoplay span {
+  background: url("http://static.fate-go.jp/images/sp_footer_nav_04.png?v=2") center top no-repeat;
+}
+/* line 227, ../sass/view/_footer.scss */
+footer div.wrapper div.colored nav ul.nav li.gallery a {
+  background: url("http://static.fate-go.jp/images/sp_footer_nav_05.png") center top no-repeat;
+}
+/* line 230, ../sass/view/_footer.scss */
+footer div.wrapper div.colored nav ul.nav li.twitter {
+  display: none;
+}
+/* line 237, ../sass/view/_footer.scss */
+footer div.wrapper div.others {
+  font-size: 11px;
+  color: #999;
+  width: 640px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 244, ../sass/view/_footer.scss */
+footer div.wrapper div.others ul {
+  overflow: hidden;
+  *zoom: 1;
+  margin: 39px 0 40px 13px;
+}
+/* line 248, ../sass/view/_footer.scss */
+footer div.wrapper div.others ul li {
+  width: 300px;
+  display: inline-block;
+}
+/* line 251, ../sass/view/_footer.scss */
+footer div.wrapper div.others ul li a {
+  color: #999 !important;
+}
+/* line 253, ../sass/view/_footer.scss */
+footer div.wrapper div.others ul li a img {
+  margin-bottom: 10px;
+}
+/* line 257, ../sass/view/_footer.scss */
+footer div.wrapper div.others ul li.center {
+  margin-left: 15px;
+}
+/* line 260, ../sass/view/_footer.scss */
+footer div.wrapper div.others ul li.right {
+  margin-top: 21px;
+}
+/* line 266, ../sass/view/_footer.scss */
+footer div.wrapper div.others p.rights {
+  width: 640px;
+  color: #FFF;
+  font-size: 21px;
+  line-height: 1.4em;
+  text-align: center;
+  margin-bottom: 100px;
+  padding: 27px 0 0 0;
+}
+/* line 275, ../sass/view/_footer.scss */
+footer div.wrapper div.others p.contact {
+  width: 640px;
+  font-size: 24px;
+  border-top: 2px solid #959595;
+  border-bottom: 2px solid #959595;
+  padding: 17px 20px;
+}
+/* line 281, ../sass/view/_footer.scss */
+footer div.wrapper div.others p.contact a {
+  color: #FFF;
+}
+/* line 283, ../sass/view/_footer.scss */
+footer div.wrapper div.others p.contact a:link, footer div.wrapper div.others p.contact a:active, footer div.wrapper div.others p.contact a:visited {
+  text-decoration: none;
+}
+/* line 286, ../sass/view/_footer.scss */
+footer div.wrapper div.others p.contact a:hover {
+  text-decoration: underline;
+}
+
+div.wrapper div#news_color{
+	background:url('/wp-content/themes/fgo-blog/img/bg_ul.jpg')
+}
